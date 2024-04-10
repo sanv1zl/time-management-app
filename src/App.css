@@ -1,0 +1,29 @@
+
+
+.tasks-right {
+    z-index: 2;
+    border-radius: 20px;
+    padding-bottom: 35vw;
+    width: 100%; /* Set width as needed */
+    background-image: url('https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-piccinng-3075993.jpg&fm=jpg');
+    background-size: contain;
+}
+
+.tasks-right::after {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+.task-ul {
+    list-style: none;
+    display: flex;
+}
+
+.task-ul li:first-child {
+    flex: 0 0 30%; /* Grow factor: 0, Shrink factor: 0, Basis: 30% */
+}
+
+.task-ul li:last-child {
+    flex: 0 0 70%; /* Grow factor: 0, Shrink factor: 0, Basis: 70% */
+    align-self: flex-end;
+    margin-left: .5vw;
+}
